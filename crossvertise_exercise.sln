@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebApp", "WebApp\", "{B429535F-651D-4EE4-AFC6-34AF6D0A5AEC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{162589fc-2ccf-42ed-ba1b-f093f3bfab10}|CalendarService.dll;{BECB0F78-3EED-4B90-BDD3-895350C13279}|BusinessLogic.dll;{66A81B31-1956-4835-9B7A-DA3B48765074}|DataModel.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2338"
+		Debug.AspNetCompiler.PhysicalPath = "WebApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2338\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2338"
+		Release.AspNetCompiler.PhysicalPath = "WebApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2338\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2338"
+		SlnRelativePath = "WebApp\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{BECB0F78-3EED-4B90-BDD3-895350C13279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{66A81B31-1956-4835-9B7A-DA3B48765074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarService", "CalendarService\CalendarService.csproj", "{162589FC-2CCF-42ED-BA1B-F093F3BFAB10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Tests", "BusinessLogic.Tests\BusinessLogic.Tests.csproj", "{7F1FD257-48D0-4C0C-886D-7A065C18DCD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B429535F-651D-4EE4-AFC6-34AF6D0A5AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B429535F-651D-4EE4-AFC6-34AF6D0A5AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B429535F-651D-4EE4-AFC6-34AF6D0A5AEC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B429535F-651D-4EE4-AFC6-34AF6D0A5AEC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{BECB0F78-3EED-4B90-BDD3-895350C13279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECB0F78-3EED-4B90-BDD3-895350C13279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECB0F78-3EED-4B90-BDD3-895350C13279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECB0F78-3EED-4B90-BDD3-895350C13279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A81B31-1956-4835-9B7A-DA3B48765074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A81B31-1956-4835-9B7A-DA3B48765074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A81B31-1956-4835-9B7A-DA3B48765074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A81B31-1956-4835-9B7A-DA3B48765074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162589FC-2CCF-42ED-BA1B-F093F3BFAB10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162589FC-2CCF-42ED-BA1B-F093F3BFAB10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162589FC-2CCF-42ED-BA1B-F093F3BFAB10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162589FC-2CCF-42ED-BA1B-F093F3BFAB10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F1FD257-48D0-4C0C-886D-7A065C18DCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1FD257-48D0-4C0C-886D-7A065C18DCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1FD257-48D0-4C0C-886D-7A065C18DCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1FD257-48D0-4C0C-886D-7A065C18DCD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

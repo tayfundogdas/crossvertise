@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Calendar";
+}
+
+<script type="text/javascript" src="~/Scripts/pages/Calendar.js"></script>
+
+<h2>Calendar</h2>
+<div>
+    Choose your month :
+</div>
+<script id="monthTmpl" type="text/x-jsrender">
+    {{for months}}
+    <a href="#" onclick="PopulateAppointments({{:#index}})">{{>#data}}</a> |
+    {{/for}}
+</script>
+<div id="MonthsBand">
+</div>
+<br />
+<br />
+<script id="appointmentsTmpl" type="text/x-jsrender">
+    {{>AppointmentDateStr}} : <a href="#" onclick="PopulateAppointmentDetails({{>Id}})">{{>Description}}</a> <br>
+</script>
+<div id="Appointments" style="float:left;">
+</div>
+<script id="appointmentDetailTmpl" type="text/x-jsrender">
+    Description : {{>Appointment.Description}} <br />
+    Date : {{>Appointment.AppointmentDateStr}} <br />
+    Organizer : {{>Organizer.Name}} {{>Organizer.Surname}} <br />
+    Attendeeds : 
+    <ul>
+        {{for Attendees}}
+        <li>{{>Name}} {{>Surname}}</li>
+        {{/for}}
+    </ul>
+</script>
+<div id="AppointmentDetails" style="float:right;">
+</div>
